@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-haft{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+.text-while{
+    color: white !important;
+}
+.text-black{
+    color: black  !important;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index:1;
+}
+#nav{
+
+}
+#nav li{
+   display: inline-block;
+    line-height: 46px;
+    position: relative;
+
+}
+#nav{
+    display: inline-block;
+}
+#nav> li:hover> a{
+    
+    color: black;
+    background-color: #ccc;
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav >li>a{
+    color: white;
+    text-transform:uppercase ;    
+}
+#nav li a{
+    
+    text-decoration: none;
+    padding: 0 24px;
+    
+    
+}
+#nav .subnav{
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+#nav .subnav li{
+    width: 100%;
+    min-height: 12px;
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 3px;
+}
+#nav .subnav li:hover{
+    color: black;
+    background-color: #ccc; 
+}
+#nav .icondown{
+    font-size: 12px;
+}
+#header .searchbutton{
+    float: right;
+    padding: 0 21px;
+}
+#header .searchbutton:hover{
+    cursor: pointer;
+    background-color: #f44336;
+}
+#header .iconsearch{
+    color: white;
+    line-height: 46px;
+}
+
+#slider{
+    position: relative;
+margin-top: 46px;
+padding-top: 50%;
+background: url('/frontend/htmlcss/W3-band/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+
+}
+#slider .text-slider{
+    position: absolute;
+    color: white;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-slider1{
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+#slider .text-slider2{
+    font-size: 12px;
+    font-weight: 800;
+    opacity: 0.9;
+}
+
+#content{
+   
+}
+#content .content-section{
+    width: 800px;
+    padding: 32px;
+     margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+#content .section-subheading{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 15px;
+    opacity: 0.6;
+    font-style: italic;
+    
+}
+#content .about{
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 15px;
+}
+#content .member-list{
+    margin-top: 48px;
+    
+}
+#content .member-item{
+    float: left;
+    text-align: center;
+    width: calc(100%/3);
+    
+}
+#content .name-member{
+    margin: 15px 0;
+}
+#content .img-member{
+    width: 154px;
+    height: 154px;
+    border-radius: 4px;
+}
+.ticket-section{
+    background-color: black;
+}
+.ticket-section .ticket{
+    background-color: white;
+    color: #757575;
+    list-style: none;
+    font-size: 15px;
+}
+.ticket-section li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket-section .soldout{
+    margin-left: 16px;
+    background-color: rgb(244, 67, 54);
+    color:  rgb(255, 255, 255);
+    padding: 2px 8px;
+}
+.ticket-section .quantity{
+    width: 24px;
+    float: right;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3px;
+    margin: -3px;
+    margin-right: 10px;
+}
+.ticket-section .buy-ticket{
+   margin-top: 32px;
+   margin: 32px -8px 64px ;
+}
+
+.buy-ticket .place-ticket{
+    float: left;
+    width: calc(100%/3);
+    padding: 8px;
+}
+.place-ticket .img-ticket{
+    width: 100%;
+    display: block;
+}
+.place-ticket .img-ticket:hover{
+    opacity: 0.6;
+}
+
+.buy-ticket .content-ticket{
+    background-color: white;
+    font-size: 15px;
+    padding:16px ;
+}
+.content-ticket .name-ticket{
+    font-weight: 600;
+    padding-top: 15px;
+}
+.content-ticket .date-ticket{
+    padding: 15px 0;
+    opacity: 0.6;
+}
+.description-ticket{
+    padding-bottom: 15px;
+}
+.ticket-button{
+    text-decoration:none;
+    background-color:#000 ;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+}
+.ticket-button:hover{
+    background-color: #ccc;
+    color: black;
+}
+.contact-content{
+  margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i{
+    display:inline-block ;
+    width: 30px;
+}
+.input-text{
+    font-size: 15px;
+    margin-bottom: 8px;
+    
+
+}
+.input-text input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+.button-send{
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    float: right;
+    font-size: 15px;
+    border: none;
+}
+.button-send:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+.map img{
+    width: 100%;
+    padding-top: 96px;
+    filter: grayscale(50%);
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 18px;
+}
+#footer .social-section a{
+    text-decoration: none;
+    color: rgb(112, 101, 101);
+}
+#footer .text-end a:hover,
+#footer .social-section a:hover{
+    opacity: 0.5;
+}
+#footer .text-end{
+    padding-top: 15px;
+    color: rgb(112, 101, 101);
+}
+#footer .text-end a{
+    color: rgb(112, 101, 101);
+}
