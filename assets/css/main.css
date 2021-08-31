@@ -40,8 +40,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#main {}
-
 #header {
     height: 46px;
     background-color: black;
@@ -51,8 +49,6 @@ html {
     right: 0;
     z-index: 1;
 }
-
-#nav {}
 
 #nav li {
     display: inline-block;
@@ -133,7 +129,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('..../assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('/../assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-slider {
@@ -155,8 +151,6 @@ html {
     font-weight: 800;
     opacity: 0.9;
 }
-
-#content {}
 
 #content .content-section {
     width: 800px;
